@@ -19,8 +19,8 @@ function updateScore() {
 function setTask() {
     let len, num1;
     answer = 0.1;
-    while( !Number.isInteger(answer)){
-        len = getRandomInteger(1, 300);
+    while( !Number.isInteger(answer) || answer == 1  || answer == 0){
+        len = getRandomInteger(1, 100);
         num1 = getRandomInteger(0, len);
         answer = num1 * 100 / len;
     }
@@ -36,6 +36,7 @@ function setTask() {
     shuffle(arr);
 
     document.getElementById('code').innerText = arr.join('');
+    document.getElementById('input').value = "";
 }
 
 function checkAnswer(){

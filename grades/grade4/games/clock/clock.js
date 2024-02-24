@@ -6,6 +6,9 @@ function setTask() {
     document.getElementById('hourArrow').style.transform = `rotateZ(${answer/2}deg)`;
     document.getElementById('minuteArrow').style.transform = 
         `rotateZ(${6 * (answer%60)}deg)`;
+    document.getElementById('hoursInput').value = "";
+    document.getElementById('minutesInput').value = "";
+
 }
 
 

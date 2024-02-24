@@ -8,21 +8,22 @@ body{
   left: 0;
 
   width: 930px;
-  height: 640px;
+  height: 700px;
 
   background-image: url("images/hand.png");
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center;
+  background-position-y: bottom;
+  background-position-x: center; 
 }
 
 #screen {
   position: absolute;
-  bottom: 55.2%;
+  bottom: 50%;
   left: 54.7%;
   
   width: 37.1%;
-  height: 30.4%;
+  height: 29%;
 
   background-color: #d6d6ff;
 

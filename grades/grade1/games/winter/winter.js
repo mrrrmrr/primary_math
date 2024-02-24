@@ -77,7 +77,7 @@ ballsElement.onclick = function (){
             <path fill=${colors[ballColorNum]} d="M45,28.5c-12.5,0-22.7,10.2-22.7,22.7c0,12.5,10.2,22.7,22.7,22.7c12.5,0,22.7-10.2,22.7-22.7C67.7,38.7,57.5,28.5,45,28.5z   M63.8,50.2c0.6,0,1,0.4,1,1C64.8,62.1,55.9,71,45,71c-0.6,0-1-0.4-1-1s0.4-1,1-1c9.8,0,17.8-8,17.8-17.8  C62.8,50.7,63.3,50.2,63.8,50.2z"/>`;
         ballsElement.append(ballElement);
 
-        if (ballsElement.childElementCount > 5){
+        if (ballsElement.childElementCount >= 5){
             document.getElementById('star').style.visibility = 'visible';
         }
     }

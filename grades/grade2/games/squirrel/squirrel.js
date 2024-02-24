@@ -8,6 +8,7 @@ function setTask(){
     for (let i = 0; i < 2; i++){
         document.getElementById(`var${i}`).textContent = vars[i];
     }
+    document.getElementById('input').value = "";
 }
 
 function checkAnswer() {

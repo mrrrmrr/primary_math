@@ -1,7 +1,7 @@
 let answer, rightNum = 0, wrongNum = 0;
 
 
-function set_Task() {
+function setTask() {
     let vars = [getRandomInteger(1, 20), getRandomInteger(1, 20)]
     answer = vars[0] > vars[1] ? '>' : vars[0] < vars[1] ? '<' : '=';
 
@@ -16,7 +16,7 @@ for (let btn of document.getElementsByClassName('btn')){
         if (this.getAttribute('data') == answer){
             rightNum++;
             document.getElementById('right').innerHTML = rightNum;
-            set_Task();
+            setTask();
         } else {
             wrongNum++;
             document.getElementById('wrong').innerHTML = wrongNum;
