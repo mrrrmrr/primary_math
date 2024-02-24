@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Игорь</title>
+    <link rel="stylesheet" href="../../../../common/common.css">
+    <link href="folder.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <script>
+      const rules = `У Игоря есть несколько папок и файлы одинакового размера. Может ли он распределить файлы по папкам так, чтобы все папки имель одинаковый вес?`;  
+    </script>
+
+    <div id="window">
+
+      <div id="score">
+          <div id="right">0</div>
+          <div> / </div>
+          <div id="wrong">0</div>
+      </div>
+
+      <div id="cloud">
+        <div id="task">
+
+          <div class="container" id="container1">
+            <div id="files"></div>
+            <img src="images/files.svg">
+          </div>
+
+          <div class="container" id="container2">
+            <div id="folders">  </div>
+            <img src="images/folder.svg">
+          </div>
+
+        </div>   
+      </div>
+
+    </div>
+
+    <div id="panel">
+      <button data="1" id="yesButton"> Да </button>
+      <button data="0" id="noButton"> Нет </button>
+    </div>
+
+    <script src="../../../../common/common.js"></script>
+    <script src="folder.js"></script>
+  </body>
+
+</html>

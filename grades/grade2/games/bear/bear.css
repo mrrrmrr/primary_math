@@ -1,0 +1,51 @@
+body{
+  background-color: #00bcd49c;
+}
+
+#bears{
+  position: relative;
+  bottom: 0;
+
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+
+  background-image: url("images/grass.png");
+  background-repeat: no-repeat;
+  background-size: 100%, auto;
+  background-position-y: bottom;
+
+  img {
+    position: absolute;
+    bottom: 0;
+
+    max-height: 70%;
+  }
+}
+
+
+#task {
+  position: fixed;
+  top: 7%;
+
+  width: 400px;
+
+  font-size: 70px;
+
+  div{
+    display: inline-flex;
+  }
+
+  input {
+    width: 80px;
+
+    font-size: 60px;
+  }
+}
+
+button {
+    position: fixed;
+    top: 20%;
+
+    font-size: 30px;
+}

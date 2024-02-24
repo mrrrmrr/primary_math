@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Аквариум</title>
+    <link rel="stylesheet" href="../../../../common/common.css">
+    <link rel="stylesheet" href="fish.css">
+  </head>
+  <body>
+
+    <script>
+      const rules = `Зоомагазин раздает рыбок. Чтобы проверить ответственность посетителя, он просит решить прнимер. "Тот, кто не сможет с ним справиться, уход за рыбкой точно не потянет." - логика владельцев. Попробуем заполнить аквариум?
+        Введите ответ в белое поле и нажмите "проверить".`;
+    </script>
+
+    <div id="water"></div>
+    <div id="fish"></div>
+
+    <div id="task">
+      <div id="sign"> - </div>
+      <div id="vars">
+          <div id="var0"> 78 </div>
+          <div id="var1"> 54 </div>
+          <div id="line"> <hr size="5px"> </div>
+          <div id="var2">
+              <input type="number" size="100px" id="input">
+          </div>
+      </div>
+      <button onclick="checkAnswer()"> проверить </button>
+    </div>
+
+
+    <script src="../../../../common/common.js"></script>
+    <script src="fish.js"></script>
+  </body>
+</html>

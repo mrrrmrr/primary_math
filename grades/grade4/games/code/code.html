@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Метрика</title>
+    <link rel="stylesheet" href="../../../../common/common.css">
+    <link rel="stylesheet" href="code.css">
+  </head>
+
+  <body>
+
+    <script>
+      const rules = `Начинаем свой путь в программировании. Нас попросили посчитать необычную метрику - долю единиц в процентах в двоичном коде некоторого файла. Код на экране.
+        Введите, какую часть составляют единицы от количества всех цифр, затем нажмите "Отправить". `;  
+    </script>
+
+    <div id="score">
+      <div id="right">0</div>
+      <div> / </div>
+      <div id="wrong">0</div>
+    </div>
+
+    <div class="x-center" id="laptop">
+      <div id="screen">
+
+        <div id="program1">
+          <div id="code"></div>
+        </div>
+
+        <div id="program2">
+          <div>
+            <input type="text" id="input">
+                %
+          </div>
+          <button onclick="checkAnswer()"> Отправить </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="desk"></div>
+
+    <script src="../../../../common/common.js"></script>
+    <script src="code.js"></script>
+  </body>
+</html>

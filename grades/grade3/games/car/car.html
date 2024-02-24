@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Дорога</title>
+    <link rel="stylesheet" href="../../../../common/common.css">
+    <link rel="stylesheet" href="car.css">
+  </head>
+
+  <body>
+
+    <script type="text/javascript">
+      const rules = `Водитель научился водить, но все время забывает, как переводить единицы измерения длины друг в друга, потому не может сдвинуться с места. А как сдвинется, начинает путаться и возвращается назад. Сегодня ему очень нужно проехать этот участок со странной дорогой, где постоянно нужно быть начеку. Кажется, сам он не справится. 
+      Введите недостающее число и нажмите "проверить".`
+    </script>
+
+    <div id="town"> </div>
+
+    <div class="x-center" id="task">
+      <div id="var0">  </div>
+      <div id="measure0">   </div>
+      <div> = </div>
+      <div id="var1"> </div>
+      <div id="measure1"> </div>
+    </div>
+
+    <button class="x-center" onclick="checkAnswer()"> проверить </button>
+
+    <img id="car" src="images/car.png" >
+
+    <script src="../../../../common/common.js"></script>
+    <script src="car.js"></script>
+  </body>
+
+</html>

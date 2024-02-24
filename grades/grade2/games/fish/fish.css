@@ -1,0 +1,103 @@
+body{
+    min-height: 400px;
+}
+
+
+#water {
+  position: absolute;
+  bottom: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-image: url("images/water.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: bottom;
+
+  opacity: 0.5;
+}
+
+#fish{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: 70%;
+
+  img{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+  }
+}
+
+#task{
+  position: absolute;
+  top: 20%;
+  left: 70%;
+  color: black;
+  height: 200px;
+  width: 100px;
+  font-size: 50px;
+
+  #vars{
+    position: relative;
+
+    height: 200px;
+    width: 100px;
+    padding: 0;
+
+    div{
+      display: block;
+    }
+  }
+
+  #var0, #var1, #var2{
+    position: relative;
+
+    width: 100%;
+    height: 50px;
+    text-align: right;
+  }
+
+  #line{
+    font-size: 10px;
+
+    hr{
+      background-color: black;
+    }
+  }
+
+  input {
+    position: absolute;
+    top: 0;
+    right: -20px;
+
+    display: flex;
+    width: 120%;
+
+    font-size: 50px;
+    text-align: right;
+  }
+
+  #sign{
+    position: absolute;
+    top: 30px;
+
+    width: 55px;
+  }
+}
+
+button {
+  position: absolute;
+  top: 90%;
+  left: -7%;
+
+  width: 128%;
+  height: 40px;
+
+  font-size: 24px;
+}

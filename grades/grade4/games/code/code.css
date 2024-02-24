@@ -1,0 +1,117 @@
+body {
+  background-color: #92ea6ecf;
+}
+
+#desk {
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+
+  height: 40%;
+  width: 100%;
+
+  border: 3px solid #0000001f;
+  background-color: #ae842a;
+}
+
+#laptop {
+  position: absolute;
+  bottom: 5%;
+
+  width: 660px;
+  height: 512px;
+
+  background-image: url("images/laptop.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-position-x: center;
+  
+  #screen {
+    position: absolute;
+    left: 15%;
+    top: 6.3%;
+
+    height: 49.5%;
+    width: 68.5%;
+    
+    background-color: blue;
+
+    border: 3px solid black;
+
+    > div {
+      left: 0;
+      width: 100%;
+      border: 1px solid black;   
+    }
+  }
+}
+
+#program1 {
+  top:0;
+      
+  height: 70%;
+    
+  background-color: #58364e;
+
+  #code{
+    width: 96%;
+    height: 96%;
+    margin: 2%;
+
+    color: white;
+    word-break: break-all;
+    font-size: 20px;
+  }  
+}
+
+#program2{
+  position: relative;
+  bottom: 0;
+
+  height: 30%;
+
+  background-color: #e5e5e5;
+
+  font-size: 40px;
+    
+  button{
+      position: absolute;
+      right: 25%;
+      height: 40px;
+      top: 23%
+  }
+
+  div {
+    position: absolute;
+    left: 25%;
+    top: 18%;
+  }
+
+  input {
+    height: 40px;
+    width: 50px;
+
+    font-size: 40px;
+  }
+}
+
+#score {
+  position: fixed;
+  top: 20px;
+  left: 20px; 
+
+  font-size: 50px;
+    
+  div{
+      display: inline-flex;
+  }
+
+  #wrong {
+      color: red;
+  }
+  #right {
+      color: #4bc734;
+  }
+}
+

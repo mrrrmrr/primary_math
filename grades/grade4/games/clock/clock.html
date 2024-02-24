@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Часы</title>
+  <link rel="stylesheet" href="../../../../common/common.css">
+  <link rel="stylesheet" href="clock.css">
+</head>
+
+<body>
+
+  <script>
+    const rules = `Нам нужно настроить компьютер, а интернета нет. И гаджетов других нет, и спросить не у кого. Но часы у нас есть - хотя бы с настройкой времени справимся. Только оно какое-то странное...
+    Определите, сколько сейчас может быть времени и введите ответы в поля, затем нажмите "Ok". (Время считается в промежутке от 00:00 до 23:59. Ответы с разницей в 12 часов считаются равносильными, например 14:43 и 02:43. Если какой-то из них верен, то дркгой тоже. И наоборот.)`;  
+  </script>
+
+  <div class="x-center" id="window">
+
+    <div id="clock">
+      <div id="circle"></div>
+      <div class="arrow" id="hourArrow"></div>
+      <div class="arrow" id="minuteArrow"></div>
+    </div>
+
+    <div class="screen" id="screen2">
+      <div class="x-center" id="task">
+        <div> 
+          <input id="hoursInput" type="text">
+        </div>
+        <div> : </div>
+        <div> 
+          <input id="minutesInput" type="text">
+        </div>
+        <button class="x-center" onclick="checkAnswer()"> Ok </button>
+      </div>
+    </div>
+
+    <div class="screen" id="screen1">
+      <div class="xy-center" id="score">
+        <div id="right">0</div>
+        <div> / </div>
+        <div id="wrong">0</div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="../../../../common/common.js"></script>
+  <script src="clock.js"></script> 
+</body>
+</html>

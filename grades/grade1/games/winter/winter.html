@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+      <meta charset="UTF-8">
+      <title>Елочка</title>
+      <link rel="stylesheet" href="../../../../common/common.css">
+      <link rel="stylesheet" href="winter.css">
+  </head>
+
+  <body>
+    <script>
+      const rules = `"Маленькой елочке холодно зимой..." Нет, рубить елочку и забирать домой мы не будем. Давайте ее приоденем на месте! Елочка оказалась непростая, и надеть на нее можно только "правильные" шары, от "неправильных" она трясется - шары разбиваются. 
+      Чтобы повесить шар, решите пример и выберете шар с правильным ответом. Затем кликните на елочку. Если не видно подходящего шара, нажмите на кнопку "Новые шары".`;
+    </script>
+
+    <div id="window">
+
+      <div id="container">
+        <img src="images/tree.svg" alt="tree" id="tree"/>
+        <img src="images/star.svg" id="star"/>
+        <div id="balls"></div>
+      </div>
+
+      <div id="task">
+        <div id="var0">  </div>
+        <div id="sign"> - </div>
+        <div id="var1">  </div>
+        <div> = </div>
+        <div id="var2"> ? </div>
+      </div>
+
+      <button id="btn" onclick="generateBalls()"> Новые шары</button>
+    </div>
+
+    <div id="panel"></div>
+
+    <script src="../../../../common/common.js"></script>
+    <script src="winter.js"> </script>
+  </body>
+</html>

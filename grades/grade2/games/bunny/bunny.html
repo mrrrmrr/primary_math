@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Багз</title>
+    <link rel="stylesheet" href="../../../../common/common.css">
+    <link rel="stylesheet" href="bunny.css">
+  </head>
+
+  <body>
+    <script type="text/javascript">
+      const rules = `Багз решил заняться математикой. Чтобы мотивировать себя и дать мозгу глюкозу, он неподалеку припрятал морковь. Сейчас он проходит сложение в столбик, но не все понимает и просит помочь с некоторыми примерами. 
+      Введите ответ в белое поле и нажмите кнопку "проверить".`;
+    </script>
+
+    <div id="bunny">
+      <img id="img0" src="images/bunny1.png" hidden>
+      <img id="img1" src="images/bunny2.png" hidden>
+      <img id="img2" src="images/bunny3.png" hidden>
+    </div>
+
+    <div id="task">
+
+      <div id="sign"> + </div>
+
+      <div id="vars">
+        <div id="var0">  </div>
+        <div id="var1">  </div>
+        <div id="line"> <hr> </div>
+        <div id="var2">
+            <input id="input" type="number" size="100px" id="input">
+        </div>
+      </div>
+
+      <button onclick="checkAnswer()"> проверить </button>
+
+    </div>
+
+    <script src="../../../../common/common.js"></script>
+    <script src="bunny.js"></script>
+  </body>
+</html>

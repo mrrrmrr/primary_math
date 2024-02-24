@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+      <meta charset="UTF-8">
+      <title>Вазы</title>
+      <link rel="stylesheet" href="../../../../common/common.css">
+      <link rel="stylesheet" href="vases.css">
+  </head>
+
+  <body>
+
+    <script>
+      const rules = `Дядюшка Августин много путешествовал в молодости и привез, он уже не помнит откуда, коллекцию ваз. Он хочет расхламить свой дом и не против подарить Вам несколько. Но у него слишком много свободного времени - он решил и у Вас его немного украсть. Просто так отдавать вазы скучно, поэтому опредлагает задание. Правильно ответите - получаете вазу. Неправильно - отдаете. 
+      Введите недостающее число в белое поле и нажмите "проверить".`;
+    </script>
+
+    <img id="wall" src="images/wall.png" >
+
+    <div id="window">
+
+      <div class="shelf" id="shelf1">
+        <div class="x-center vases">
+            <img id="vase11" src="images/vase13.svg">
+            <img id="vase2" src="images/vase4.svg">
+            <img id="vase3" src="images/vase7.svg">
+            <img id="vase1" src="images/vase1.svg">
+            <img id="vase4" src="images/vase2.svg">
+            <img id="vase12" src="images/vase12.svg">
+        </div>
+      </div>
+
+      <div class="shelf" id="shelf2">
+        <div class="x-center vases">
+            <img id="vase7" src="images/vase11.svg">
+            <img id="vase8" src="images/vase6.svg">
+            <img id="vase9" src="images/vase3.svg">
+            <img id="vase5" src="images/vase5.svg">
+            <img id="vase6" src="images/vase8.svg">
+            <img id="vase10" src="images/vase10.svg">
+            <img id="vase13" src="images/vase14.svg">
+        </div>
+      </div>
+
+      <div class="x-center" id="task">
+          <div id="var0"></div>
+          <div id="sign"></div>
+          <div id="var1"></div>
+          <div> = </div>
+          <div id="var2"></div>
+      </div>
+
+      <button class="x-center" onclick="checkAnswer()"> проверить </button>
+
+    </div>
+
+    <script src="../../../../common/common.js"></script>
+    <script src="vases.js"> </script>
+
+  </body>
+
+</html>

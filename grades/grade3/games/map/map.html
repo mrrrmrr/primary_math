@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+      <meta charset="UTF-8">
+      <title>Дома</title>
+      <link rel="stylesheet" href="../../../../common/common.css">
+      <link href="map.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <script> 
+      const rules = `Нам поручили важное задание: придумать размещение домов в поселке. Качественно спланировать постройку без математики точно не выйдет. В процессе возникают разные задачи, например, отмерять и анализировать расстояния. От такой мелочи может зависить судьба не только здания, но и людей. Хорошо, что людей пока нет и мы тренируемся. Получится - замечательно, ставим дом. Не получится - ничего страшного, он просто рухнет, потом новый построим. 
+        Сравните выражения и выберите нужный знак `;
+    </script>
+
+    <div id="top">
+      <div class="x-center" id="task">
+        <div class="var" id="m0"> 5 </div>
+        <div class="measure"> м </div>
+        <div class="var" id="dm0"> 7 </div>
+        <div class="measure">дм</div>
+        <div class="var" id="cm0"> 9 </div>
+        <div class="measure">см</div>
+        <div id="sign0"> - </div>
+        <div class="var" id="m1"> 3 </div>
+        <div class="measure"> м </div>
+        <div class="var" id="dm1"> 8 </div>
+        <div class="measure">дм</div>
+        <div class="var" id="cm1"> 6 </div>
+        <div class="measure">см</div>
+
+        <div id="question">?</div>
+
+        <div class="var" id="m2"> 5 </div>
+        <div class="measure"> м </div>
+        <div class="var" id="dm2">6</div>
+        <div class="measure">дм</div>
+        <div class="var" id="cm2">7</div>
+        <div class="measure">см</div>
+        <div id="sign1">+</div>
+        <div class="var" id="m3"> 9 </div>
+        <div class="measure"> м </div>
+        <div class="var" id="dm3">3</div>
+        <div class="measure">дм</div>
+        <div class="var" id="cm3">1</div>
+        <div class="measure">см</div>
+      </div>
+    </div>
+
+    <div id="map">
+    </div>
+
+    <div id="panel">
+      <div class="btn" data=">">
+          <p class="x-center"> > </p>
+      </div>
+      <div class="btn" data="=">
+          <p class="x-center"> = </p>
+      </div>
+      <div class="btn" data="<">
+          <p class="x-center"> < </p>
+      </div>
+    </div>
+
+    <script src="../../../../common/common.js"></script>
+    <script src="map.js"></script>
+
+  </body>
+
+</html>

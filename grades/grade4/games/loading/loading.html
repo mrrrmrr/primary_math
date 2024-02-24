@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+      <meta charset="UTF-8">
+      <title>Загрузка</title>
+      <link rel="stylesheet" href="../../../../common/common.css">
+      <link rel="stylesheet" href="loading.css">
+  </head>
+
+  <body>
+
+    <script>
+      const rules = `Мы скачали интересный загрузчик. Он предлагает угадать, какое время он не отобразил. Угадаем - файл мгновенно скачается. Правда, он имеет доступ к нашей файловой системе и может удалить файл за неудачную попытку.. Сыграем?
+        Введите недостающее число часов и минут, затем нажмите "проверить" (Известно, что загрузка точно завершится сегодня. Количество минут не может быть больше 59.) `;  
+    </script>
+    
+    <div id="phone">
+
+      <div id="screen">
+
+        <div id="topPanel">
+
+          <div id="time">
+            <div id="h0"></div>
+            <div>:</div>
+            <div id="m0"></div>
+          </div>
+
+          <img src="images/signal.svg" id="signal">
+          <img src="images/battery.svg" id="battery">
+
+        </div>
+
+        <div id="data">
+
+            <div id="loadedFiles">
+              <div>Скачанo файлов:</div>
+              <div id="score">0</div>
+            </div>
+
+            <div id="leftTime">
+              <div>До окончания загрузки:</div>
+              <div>
+                <div id="h1"></div>
+                <div> ч.</div>
+                <div id="m1"></div>
+                <div> мин.</div>
+              </div>
+            </div>
+
+            <div id="endTime">
+              <div>Время завершения:</div>
+              <div>
+                <div id="h2"></div>
+                <div> : </div>
+                <div id="m2"></div>
+              </div>
+            </div>
+
+        </div>
+
+        <img class="x-center" src="images/loading.png" id="loading">
+
+        <button onclick="checkAnswer()"> проверить </button>
+
+      </div>
+    </div>
+
+    <script src="../../../../common/common.js"></script>
+    <script src="loading.js"></script>
+  </body>
+</html>

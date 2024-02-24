@@ -1,0 +1,97 @@
+#sky{
+  position: absolute;
+  z-index: -200;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  min-width: 400px;
+  min-height: 600px;
+
+  background-image: url(images/sky.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 600px;
+}
+
+#bottom {
+  position: absolute;
+  z-index: -100;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  min-width: 400px;
+  min-height: 200px;
+
+  z-index: -100;
+  background-image: url(images/grass.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 200px;
+}
+
+#flowers {
+  position: absolute;
+  bottom: 40%;
+
+  display: inline-block;
+  width: 100%;
+  height: 80%;
+
+  .flower{
+    position: absolute;
+    bottom: 0;
+
+    display: block;
+    min-width: 100px;
+    max-height: 200%;
+    max-width: 20%;
+  }
+}
+
+#task {
+  position: fixed;
+  top: 30%;
+  left: 40%;
+
+  width: 300px;
+
+  font-size: 50px;
+
+  div{
+      display: inline-block;
+  }
+}
+
+.raindrop {
+  enable-background: new 0 0 64 64;
+
+  position: fixed;
+  z-index: 1;
+
+  width:70px;
+
+  fill: #353f72bd;
+
+  animation: raindropFall 7s linear;
+
+  text {
+    font-size: 20px;
+    fill: white;
+  }
+}
+
+@keyframes raindropFall {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 80%; 
+  }
+}
+
+.raindrop:hover{
+  cursor: pointer; 
+  fill: seagreen;
+}

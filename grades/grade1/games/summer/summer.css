@@ -1,0 +1,112 @@
+body {
+  background-image: url("images/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: top;
+  background-position-x: center;
+}
+
+#window{
+  z-index: -100;
+  position: relative;
+  z-index: -100;
+  top: 0;
+
+  width: 500px;
+  height: 70%;
+  margin: 0;
+
+  color: white;
+  font-size: 50px;
+
+  #scales {
+    position: absolute;
+    z-index: 20;
+    bottom: 0;
+
+    height: 100%;
+
+    fill: #f59200;
+    stroke: #746043;
+  }
+
+  #melon1, #melon2 {
+    position: absolute;
+    z-index: 10;
+    bottom: 20%;
+
+    height: 60%;
+  }
+  #melon1 {
+    left: -26%
+  }
+  #melon2 {
+    right: -30%;
+  }
+
+  #var1, #var2 {
+    position: absolute;
+    z-index: 100;
+    top: 45%;
+
+    height: 50px;
+    width: 50px;
+  }
+  #var1{
+    left: 16%
+  }
+  #var2{
+    right: 14%;
+  }
+}
+
+#panel{
+  position: relative;
+  bottom: 0;
+  left: 0;
+
+  display: inline-flex;
+  height: 30%;
+  width: 100%;
+
+  .btn{
+    position: relative;
+    bottom: 0;
+
+    display: inline-flex;
+    height: 100%;
+    width: calc(100%/3);
+
+    font-size: 50px;
+    text-align: center;
+    border: 1px solid #746043;
+
+    p {
+      position: absolute;
+      top: 10%;
+    }
+  }
+
+  .btn:hover {
+    cursor: pointer;
+    background-color: #f59200;
+  }
+}
+
+#score{
+  position: absolute;
+  bottom: 30%;
+  left: 5%;
+
+  font-size: 40px;
+
+  div{
+    display: inline-flex;
+  }
+  #right{
+    color: limegreen;
+  }
+  #wrong{
+    color: red;
+  }
+}

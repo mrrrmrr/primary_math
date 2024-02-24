@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+      <meta charset="UTF-8">
+      <title>Кормим курочек</title>
+      <link rel="stylesheet" href="../../../../common/common.css">
+      <link rel="stylesheet" href="chicken.css">
+  </head>
+
+  <body>
+
+    <script>
+      const rules = `На ферме Павла очень умные куры, да еще и с обостренным чувством справедливости. Они чувствуют себя хорошо, когда каждой досталось одинаковое максимальное количество пшеницы и ни одно зернышко не пропало. Только в этом случае они согласны нести яйца, а иначе злятся и разбивают. Павел понял этот принцип, но уроки математики в школе пропускал, чтобы побольше поработать на ферме. Помогите Павлу собрать как можно больше яиц. Посчитайте, сколько пшенице нужно дать каждой курице, и сколько оставить на следующий раз(в скобках). 
+    Введите ответы в поля и нажмите "проверить".`;
+    </script>
+
+    <div id="window">
+
+      <div id="task">
+
+        <div id="var0"> </div>
+        <div class="wheat"> </div>
+
+        <div id="sign"> : </div>
+
+        <div id="var1"> </div>
+        <div class="chicken"></div>
+
+        <div> = </div>
+
+        <div>
+          <input type="text" id="input1">
+        </div>
+        <div class="wheat"> </div>
+
+        <div class="bracket"> ( </div>
+        <div>
+          <input type="text" id="input2">
+        </div>
+        <div class="wheat"> </div>
+        <div class="bracket"> ) </div>
+
+        <button onclick="checkAnswer()">проверить</button>
+
+      </div>
+
+      <div id="score">0</div>
+      <img id="egg" src="images/egg.svg">
+
+      <img id="farmer" src="images/farmer.png" >
+      <img id="chicken" src="images/chicken.svg" >
+    </div>
+
+    <script src="../../../../common/common.js"></script>
+    <script src="chicken.js"></script>
+  </body>
+
+</html>
