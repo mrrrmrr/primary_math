@@ -15,8 +15,6 @@ body{
 
   color: #b00000;
 
-  animation: birdFlight 20s linear;
-
   * {
     position: absolute;
   }
@@ -45,9 +43,13 @@ body{
   }
 }
 
+.flight {
+  animation: birdFlight 20s linear;
+}
+
 @keyframes birdFlight {
     0%{
-        left: 0;
+        left: -10%;
     }
     100%{
         left: 100%;
@@ -55,7 +57,7 @@ body{
 
 }
 
-.birdContainer:hover {
+.clickable:hover {
   cursor: pointer;
   color: white;
 }
