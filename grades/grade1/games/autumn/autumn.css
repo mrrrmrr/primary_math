@@ -15,7 +15,7 @@ body{
 
   color: #b00000;
 
-  animation: birdFlight 10s linear;
+  animation: birdFlight 20s linear;
 
   * {
     position: absolute;

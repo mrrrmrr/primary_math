@@ -60,5 +60,5 @@ setInterval(function () {
 
     setTimeout(function (){
         birdElement.remove()
-    }, 10000);
-}, 1000);
+    }, 20000);
+}, 1500);
