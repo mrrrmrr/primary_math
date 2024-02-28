@@ -67,11 +67,11 @@ setInterval(function () {
 
     setTimeout(function (){
         raindropElement.remove();
-    }, 7000);
+    }, 14000);
 
     document.body.append(raindropElement);
 
 
-}, 300);
+}, 500);
 
 
