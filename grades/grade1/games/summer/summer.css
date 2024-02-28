@@ -24,7 +24,7 @@ body {
     z-index: 20;
     bottom: 0;
 
-    height: 100%;
+    width: 100%;
 
     fill: #f59200;
     stroke: #746043;
@@ -33,30 +33,30 @@ body {
   #melon1, #melon2 {
     position: absolute;
     z-index: 10;
-    bottom: 20%;
+    bottom: 18%;
 
-    height: 60%;
+    width: 100%;
   }
   #melon1 {
     left: -30%;
   }
   #melon2 {
-    right: -35%;
+    right: -33.5%;
   }
 
   #var1, #var2 {
     position: absolute;
     z-index: 100;
-    top: 45%;
+    bottom: 200px;
 
     height: 50px;
     width: 50px;
   }
   #var1{
-    left: 16%
+    left: 13%
   }
   #var2{
-    right: 14%;
+    right: 13%;
   }
 }
 
