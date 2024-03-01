@@ -1,19 +1,25 @@
-body {
-  background-image: url("images/bg.png");
+#window {
+  position: absolute;
+  z-index: -1000;
+  top: 0;
+  left: 0;
+
+  height: 70%;
+  width: 100%;
+
+  background-image: url("images/sea.gif");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-y: top;
-  background-position-x: center;
+  background-position: center;
 }
 
-#window{
+#container{
   z-index: -100;
-  position: relative;
-  z-index: -100;
-  top: 0;
+  position: absolute;
+  bottom: 0;
 
   width: 500px;
-  height: 70%;
+  height: 100%;
   margin: 0;
 
   color: white;
@@ -60,8 +66,27 @@ body {
   }
 }
 
+.seagull{
+  position: absolute;
+  z-index: -10;
+}
+
+#seagull1{
+  left: 10%;
+  top: 10%;
+
+  height: 50%;
+}
+
+#seagull2 {
+  top: 20%;
+  right: 10%;
+
+  height: 100%;
+}
+
 #panel{
-  position: relative;
+  position: absolute;
   bottom: 0;
   left: 0;
 
@@ -69,6 +94,8 @@ body {
   height: 30%;
   width: 100%;
 
+  background-color: #fbfcff;
+  
   .btn{
     position: relative;
     bottom: 0;
@@ -95,7 +122,7 @@ body {
 
 #score{
   position: absolute;
-  bottom: 30%;
+  bottom: 0;
   left: 5%;
 
   font-size: 40px;
