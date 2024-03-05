@@ -1,5 +1,5 @@
 body {
-  background-color: #008ed452;
+  background-color: #addaf1;
 }
 
 #window{
@@ -7,23 +7,33 @@ body {
   z-index: -10;
   top: 0;
   left: 0;
-
-  min-height: 600px;
-  height: 100%;
-  width: 100%;
+  height: 680px;
+  width: 1370px;
   padding: 0;
-
   background-image: url("images/bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: bottom;
+}
 
+#bush{
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    z-index: 10;
+  width: 400px;
+}
+
+
+#frog{
+  position: absolute;
+  z-index: 5;
 }
 
 #task {
   position: fixed;  
-  bottom: 50%;
-  left: 30%;
+  bottom: 40%;
+  left: 35%;
 
   width: 400px;
   height: 300px;
@@ -79,9 +89,9 @@ body {
 
 
 #squirrel{
-    height: 450px;
+    height: 350px;
     position: fixed;
-    left: 50%;
+    left: 45%;
     bottom: -2%;
 }
 

@@ -1,4 +1,5 @@
 let answer, wrongNum = 0, rightNum = 0;
+let frog = false;
 
 
 function setTask(){
@@ -21,3 +22,20 @@ function checkAnswer() {
         document.getElementById('wrong').textContent = wrongNum;
     }
 }
+
+
+setInterval(function (){
+    if (!frog && getRandomInteger(0, 2) == 1){
+        console.log("Должна появиться лягушка")
+        frogElement = document.createElement('img');
+        frogElement.setAttribute('src', `images/frog.gif${"?" + Date.now()}`);
+        frogElement.setAttribute('id', "frog");
+        document.getElementById("window").prepend(frogElement);
+
+        frog = true;
+        setTimeout(function (){
+            document.getElementById("frog").remove();
+            frog = false;
+        }, 7000);
+    }
+}, 3000)
