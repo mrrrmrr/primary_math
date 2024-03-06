@@ -92,4 +92,24 @@ body {
   }
 }
 
+#carrot{
+  position: absolute;
+  top: 30px;
+  left: 90px;
+
+  height: 40px;
+}
+
+#score{
+  position: absolute;
+  left: 30px; 
+  top: 30px;
+
+  min-width: 50px;
+
+  color: white;
+  text-align: right;
+  font-size: 40px;
+}
+
 

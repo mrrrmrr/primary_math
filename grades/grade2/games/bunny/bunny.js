@@ -12,13 +12,15 @@ function setTask(){
 }
 
 
-function showBunny(){
-    for (let i = 0; i < 3; i++){
+function showScore(){
+    for (let i = 0; i < 5; i++){
         document.getElementById(`img${i}`).hidden = true;
     }
 
-    let n = score < 3 ? 0 : score < 7 ? 1 : 2;
+    let n = score % 5;
     document.getElementById(`img${n}`).hidden = false;
+
+    document.getElementById('score').innerText = (score - n) / 5;
 }
 
 
@@ -26,10 +28,10 @@ function checkAnswer() {
     if (document.getElementById('input').value == answer) {
         score++;
         setTask();
-    } else score--;
+    } else score -= score % 5;
 
-    showBunny()
+    showScore();
 }
 
 
-showBunny();
+showScore();
