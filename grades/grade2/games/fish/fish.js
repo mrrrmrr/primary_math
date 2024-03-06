@@ -16,13 +16,13 @@ function setTask(){
 
 function addFish() {
     let n = getRandomInteger(1, 15);
-    let x = getRandomInteger(0, 70);
     let y = getRandomInteger(0, 70);
+    let animationDuration = getRandomInteger(3000, 10000);
 
     let elem = document.createElement('img');
     elem.setAttribute('src', `images/fish${n}.png`);
-    elem.style.left = `${x}%`;
     elem.style.top = `${y}%`;
+    elem.style.animationDuration = `${animationDuration}ms`
 
     document.getElementById('fish').append(elem);
 }
