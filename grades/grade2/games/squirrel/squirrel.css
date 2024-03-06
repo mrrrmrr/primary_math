@@ -18,7 +18,7 @@ body {
 
 #bush{
   position: fixed;
-    z-index: 10; 
+    z-index: 20; 
   left: 0;
     bottom: -10px;
   width: 400px; 
@@ -40,7 +40,7 @@ body {
 
 #frog{
   position: absolute;
-  z-index: 20;
+  z-index: 10;
 }
 
 #task {

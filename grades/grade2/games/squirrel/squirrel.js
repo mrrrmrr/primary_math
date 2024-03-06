@@ -1,6 +1,7 @@
 let answer, wrongNum = 0, rightNum = 0;
-let frog = false;
-let rabbit = false;
+
+const frogElement = document.getElementById("frog");
+const rabbitElement = document.getElementById("rabbit");
 
 
 function setTask(){
@@ -25,30 +26,27 @@ function checkAnswer() {
 }
 
 
-setInterval(function (){
-    if (!frog && getRandomInteger(0, 2) == 1){
-        let frogElement = document.createElement('img');
-        frogElement.setAttribute('src', `images/frog.gif${"?" + Date.now()}`);
-        frogElement.setAttribute('id', "frog");
-        document.getElementById("window").prepend(frogElement);
+function showAnimation(filename, fps, frameMax, imgElement){
+    let n = 1;
+    let animation = setInterval(function (){
+        if (n > frameMax){
+            imgElement.removeAttribute('src');
+            clearInterval(animation);
+            return;
+        }
+        imgElement.setAttribute('src', `${filename}${String(n).padStart(4, '0')}.png`);
+        n++;
+    }, 1000/fps);
+}
 
-        frog = true;
-        setTimeout(function (){
-            document.getElementById("frog").remove();
-            frog = false;
-        }, 7000);
+
+
+setInterval(function (){
+    if (!frogElement.getAttribute('src') && getRandomInteger(1, 3) == 1){
+        showAnimation(filename="images/frog/frog.jpg", fps=30, frameMax=226, imgElement=frogElement)
     }
 
-    if (!rabbit && getRandomInteger(0, 2) == 1) {
-       let rabbitElement = document.createElement('img');
-       rabbitElement.setAttribute('src', `images/rabbit.gif${"?" + Date.now()}`);
-       rabbitElement.setAttribute('id', "rabbit");
-       document.getElementById("window").prepend(rabbitElement);
-
-       rabbit = true;
-       setTimeout(function() {
-            document.getElementById("rabbit").remove();
-            rabbit = false;
-       }, 1500);
+    if (!rabbitElement.getAttribute('src') && getRandomInteger(1, 3) == 1) {
+       showAnimation(filename="images/rabbit/rabbit", fps=50, frameMax=70, imgElement=rabbitElement)
     }
 }, 3000)
