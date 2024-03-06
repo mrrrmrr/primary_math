@@ -1,5 +1,6 @@
 let answer, wrongNum = 0, rightNum = 0;
 let frog = false;
+let rabbit = false;
 
 
 function setTask(){
@@ -26,8 +27,7 @@ function checkAnswer() {
 
 setInterval(function (){
     if (!frog && getRandomInteger(0, 2) == 1){
-        console.log("Должна появиться лягушка")
-        frogElement = document.createElement('img');
+        let frogElement = document.createElement('img');
         frogElement.setAttribute('src', `images/frog.gif${"?" + Date.now()}`);
         frogElement.setAttribute('id', "frog");
         document.getElementById("window").prepend(frogElement);
@@ -37,5 +37,18 @@ setInterval(function (){
             document.getElementById("frog").remove();
             frog = false;
         }, 7000);
+    }
+
+    if (!rabbit && getRandomInteger(0, 2) == 1) {
+       let rabbitElement = document.createElement('img');
+       rabbitElement.setAttribute('src', `images/rabbit.gif${"?" + Date.now()}`);
+       rabbitElement.setAttribute('id', "rabbit");
+       document.getElementById("window").prepend(rabbitElement);
+
+       rabbit = true;
+       setTimeout(function() {
+            document.getElementById("rabbit").remove();
+            rabbit = false;
+       }, 1500);
     }
 }, 3000)

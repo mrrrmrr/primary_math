@@ -17,17 +17,30 @@ body {
 }
 
 #bush{
-    position: absolute;
-    left: 0;
+  position: fixed;
+    z-index: 10; 
+  left: 0;
     bottom: -10px;
-    z-index: 10;
-  width: 400px;
+  width: 400px; 
 }
+
+#grass{
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+#rabbit{
+  z-index: 3;
+}
+
 
 
 #frog{
   position: absolute;
-  z-index: 5;
+  z-index: 20;
 }
 
 #task {
@@ -89,10 +102,11 @@ body {
 
 
 #squirrel{
-    height: 350px;
-    position: fixed;
-    left: 45%;
-    bottom: -2%;
+  height: 350px;
+  position: fixed;
+  z-index: 10;
+  left: 45%;
+  bottom: -2%;
 }
 
 
