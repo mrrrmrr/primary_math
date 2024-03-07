@@ -1,4 +1,6 @@
 let answer;
+const birdsElement = document.getElementById("birds");
+const lanternsElement = document.getElementById("lanterns");
 
 
 function moveCar(length){
@@ -79,6 +81,39 @@ function checkAnswer(){
         moveCar(-30);
     }
 }
+
+function showBlink(lantern){
+    const order = [1, 2, 3, 2, 1];
+    let i = 0;
+    let blink = setInterval(function () {
+        if (i < order.length){
+            lanternsElement.style.backgroundImage = `url("images/town_${lantern}${order[i]}.png")`;
+            i++;
+        }
+        else {
+            lanternsElement.style.backgroundImage = `url("images/town.jpg")`;
+            clearInterval(blink);
+        }
+    }, 100) 
+}
+
+
+setInterval(function () {
+    if (!getRandomInteger(0, 2)) {
+        birdsElement.style.animationPlayState = "running";
+        setTimeout(function () {
+            birdsElement.style.animationPlayState = "paused";
+        }, 5000);
+    }
+} , 6000);
+
+
+setInterval(function () {
+    let rand = getRandomInteger(1, 9)
+    if (rand < 3) showBlink('left');
+    else if (rand < 5) showBlink('right');
+    else if (rand == 9) showBlink('both');
+}, 2000);
 
 
 
