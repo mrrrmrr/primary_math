@@ -1,6 +1,7 @@
 const mapElement = document.getElementById('map');
+const houseCursorElement = document.getElementById('houseCursor');
 
-let houseCursor = false;
+let houseNum = 0;
 let answer;
 
 
@@ -48,12 +49,26 @@ function setTask(){
 }
 
 
+function addHouseCursor() {
+    houseNum = getRandomInteger(1, 16);
+    mapElement.style.cursor = `none`;
+    houseCursorElement.setAttribute('src', `images/house${houseNum}.png`);
+}
+
+function removeHouseCursor() {
+    houseNum = 0;
+    houseCursorElement.removeAttribute('src');
+    houseCursorElement.style.top = "100%";
+    houseCursorElement.style.left = "100%";
+    mapElement.style.cursor = "auto";
+}
+
+
 for (let btn of document.getElementsByClassName('btn')){
     btn.onclick = function (){
         if (this.getAttribute('data') == answer) {
-            houseCursor = true;
-            mapElement.style.cursor = `url("images/house.png") 0 0,  auto`;
-            setTask();
+            addHouseCursor();
+            setTask(); 
         }
         else if (mapElement.childElementCount > 0){
                 mapElement.lastElementChild.remove();
@@ -62,16 +77,22 @@ for (let btn of document.getElementsByClassName('btn')){
 }
 
 mapElement.onclick = function () {
-    if (houseCursor) {
-        houseCursor = false;
-        this.style.cursor = 'auto';
-
+    if (houseNum) {
         let houseElem = document.createElement('img')
-        houseElem.setAttribute('src', 'images/house.png')
-        houseElem.className = 'house'
-        houseElem.style.top = `${event.pageY}px`
-        houseElem.style.left = `${event.pageX}px`
+        houseElem.setAttribute('src', `images/house${houseNum}.png`);
+        houseElem.className = 'house';
+        houseElem.style.top = `${event.pageY}px`;
+        houseElem.style.left = `${event.pageX}px`;
 
-        mapElement.append(houseElem)
+        mapElement.append(houseElem);
+
+        removeHouseCursor();
+    }
+}
+
+document.body.onmousemove = function () {
+    if (houseNum){
+        houseCursorElement.style.left = `${event.clientX}px`;
+        houseCursorElement.style.top = `${event.clientY}px`;
     }
 }

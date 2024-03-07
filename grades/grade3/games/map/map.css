@@ -25,10 +25,16 @@ body{
   background-position-y: center;
 
   .house {
-    width: 100px;
     position: fixed;
     left: 549px;
     top: 497px;
+  }
+
+  #houseCursor{
+    z-index: 3;
+    position: fixed;
+    left: 100%;
+    top: 100%;
   }
 }
 
