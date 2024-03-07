@@ -37,6 +37,7 @@ function setTask() {
 
     document.getElementById('code').innerText = arr.join('');
     document.getElementById('input').value = "";
+    document.getElementById('length').innerText = len;
 }
 
 function checkAnswer(){

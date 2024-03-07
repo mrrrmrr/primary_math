@@ -2,21 +2,64 @@ body {
   background-color: #92ea6ecf;
 }
 
+#window{
+  position: fixed;
+  z-index: -5;
+  right: 200px;
+  top: -100px;
+  
+  height: 512px;
+  width: 400px;
+  
+
+  #outside {
+    position: absolute;
+    z-index: -100;
+    bottom: -5%;
+
+    object-fit: cover;
+    height: 100%;
+    width: 98%;
+
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    
+    /* width: 100%; */
+  }
+  #frame {
+    position: absolute;
+    z-index: -5;
+
+    width: 100%;
+
+  }
+}
+
 #desk {
   position: absolute;
   z-index: -1;
   bottom: 0;
 
   height: 40%;
+  height: 200px;
   width: 100%;
 
   border: 3px solid #0000001f;
-  background-color: #ae842a;
+  background-image: url("images/wood.jpg");
+  background-size: cover;
+
+  #cactus {
+    position: absolute;
+    bottom: 10%;
+    left: -100px;
+    width: 500px;
+  }
 }
 
 #laptop {
   position: absolute;
-  bottom: 5%;
+  bottom: 2%;
+  left: 20%;
 
   width: 660px;
   height: 512px;
@@ -48,21 +91,43 @@ body {
 }
 
 #program1 {
+  position: relative;
   top:0;
       
   height: 70%;
     
   background-color: #58364e;
+  color: white;
+  border: 2px solid black;
+  
 
   #code{
     width: 96%;
     height: 96%;
     margin: 2%;
 
-    color: white;
     word-break: break-all;
     font-size: 20px;
-  }  
+  }
+  
+  #panel{
+    position: absolute;
+    left: -1px;
+    bottom: 0;
+    
+    padding: 5px;
+    width: 101%;
+
+    font-size: 15px;
+    color: #d9d9d9;
+    
+    background-color: #00000047;
+    border: 1px solid #0000004d;
+    
+    div{
+      display: inline-flex; 
+    }
+  }
 }
 
 #program2{
