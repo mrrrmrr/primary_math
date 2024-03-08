@@ -31,8 +31,17 @@ body{
   height: 60%;
 }
 
+#butterflies {
+  position: absolute;
+  left: 30%;
+  top: -5%;
+  
+  height: 60%;
+}
+
 #task{
   position: absolute;
+  z-index: 5;
   top: 6%;
   left: 350px;
 
