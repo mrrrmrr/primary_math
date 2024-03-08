@@ -1,4 +1,6 @@
-let answer, score = 0;
+let answer, wrong = 0, right = 0;
+const wrongElement = document.getElementById("wrong");
+const rightElement = document.getElementById("right");
 
 
 function setTask(){
@@ -23,22 +25,28 @@ function setTask(){
 }
 
 
-function showBear(){
-    for (let i = 0; i < 3; i++){
-        document.getElementById(`img${i}`).hidden = true;
-    }
+function showCompliment(){
+    element = document.createElement('img');
+    element.setAttribute('src', "images/awesome.gif");
+    element.className = "x-center compliment";
+    document.body.append(element);
 
-    let n = score < 3 ? 0 : score < 7 ? 1 : 2;
-    document.getElementById(`img${n}`).hidden = false;
+    setTimeout(function(){
+        element.remove();
+    }, 3000);
 }
 
 
 function checkAnswer() {
     if (document.getElementById('input').value == answer) {
-        score++;
+        right++;
+        rightElement.innerText = right;
+
+        showCompliment();
         setTask();
     } else {
-        score--;
+        wrong++;
+        wrongElement.innerText = wrong;
     }
 
     showBear();
