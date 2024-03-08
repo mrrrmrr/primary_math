@@ -1,4 +1,6 @@
 let answer1, answer2, score = 0;
+const scoreElement = document.getElementById('score');
+const basketElement = document.getElementById('basket')
 
 
 function setTask(){
@@ -25,5 +27,6 @@ function checkAnswer(){
     }
     else if (score > 0) score -= 1;
 
-    document.getElementById('score').textContent = score;
+    scoreElement.textContent = score;
+    basketElement.setAttribute('src', `images/basket${score % 33}.svg`);
 }

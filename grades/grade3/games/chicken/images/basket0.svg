@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 28.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 48 48" style="enable-background:new 0 0 48 48;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#зад_ручки_00000147916016412362980620000003845510858226884487_);}
+	
+		.st1{fill-rule:evenodd;clip-rule:evenodd;fill:url(#пространство_00000127763707518124843800000010790934475922947236_);}
+	.st2{fill-rule:evenodd;clip-rule:evenodd;fill:url(#перед_00000108989591571043117450000003425734914240560567_);}
+	.st3{fill:url(#SVGID_1_);}
+	.st4{fill:url(#SVGID_00000060000804366164624440000010589215361917676954_);}
+	.st5{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_00000110449869080972387980000006738369449810418364_);}
+</style>
+<linearGradient id="зад_ручки_00000061461285425024908380000006621099307354921132_" gradientUnits="userSpaceOnUse" x1="-598.2948" y1="385.8022" x2="-597.2039" y2="385.5719" gradientTransform="matrix(11 0 0 -15.7293 6606 6084.1094)">
+	<stop  offset="0" style="stop-color:#552200"/>
+	<stop  offset="1" style="stop-color:#B6632C"/>
+</linearGradient>
+<path id="зад_ручки" style="fill:url(#зад_ручки_00000061461285425024908380000006621099307354921132_);" d="
+	M29.6,9.8c5.8,4.7,5.7,10.4,7.4,15.7h-4c-0.3-5.7-2.1-11-7-15.7L29.6,9.8L29.6,9.8z"/>
+<linearGradient id="пространство_00000163055822224064989940000011054131465761852314_" gradientUnits="userSpaceOnUse" x1="-639.3986" y1="378.367" x2="-638.3831" y2="377.9446" gradientTransform="matrix(35.452 0 0 -11.8358 22676.9668 4506.2798)">
+	<stop  offset="0" style="stop-color:#552200"/>
+	<stop  offset="1" style="stop-color:#B6632C"/>
+</linearGradient>
+<path id="пространство" style="fill-rule:evenodd;clip-rule:evenodd;fill:url(#пространство_00000163055822224064989940000011054131465761852314_);" d="
+	M43,29c0,3.3-4.9,7.1-17.5,7.3c-11.7,0.1-17.9-4.2-17.9-7.4s10.2-4.4,17.9-4.4C32.2,24.4,43,25.7,43,29z"/>
+<linearGradient id="перед_00000175322539617250971030000009542998017494950831_" gradientUnits="userSpaceOnUse" x1="-638.8385" y1="397.3638" x2="-639.1112" y2="398.1092" gradientTransform="matrix(35.4418 0 0 -33.3287 22670.248 13282.1289)">
+	<stop  offset="0" style="stop-color:#552200"/>
+	<stop  offset="1" style="stop-color:#B6632C"/>
+</linearGradient>
+<path id="перед" style="fill-rule:evenodd;clip-rule:evenodd;fill:url(#перед_00000175322539617250971030000009542998017494950831_);" d="
+	M29.1,9.8C27.1,9.4,26,10,24,10c-11.9,4-11.2,14.5-12.2,23.7c-2.8-1.4-4.3-3.3-4.3-4.8c0,5.5,6.2,14.3,17.9,14.2
+	c12.6-0.1,17.7-8.9,17.5-14c0,3.3-4.9,7.1-17.5,7.2c-4.2,0-7.7-0.5-10.5-1.3c0.6-10.6,1.2-21.6,15-24.9C29.7,9.9,29.4,9.8,29.1,9.8
+	L29.1,9.8z"/>
+<g id="бант">
+	
+		<radialGradient id="SVGID_1_" cx="-288.4763" cy="423.7479" r="7.5" gradientTransform="matrix(1.8241 1.0595 0.4018 -0.6918 370.2662 607.835)" gradientUnits="userSpaceOnUse">
+		<stop  offset="0" style="stop-color:#FFD73B"/>
+		<stop  offset="1" style="stop-color:#EE8400"/>
+	</radialGradient>
+	<path class="st3" d="M23.7,7.9C19,10,14.1,4.2,10,6c-1.8,3.7-0.7,7.8,2,12c5.9,2.8,6-5,13-6L23.7,7.9L23.7,7.9z"/>
+	
+		<radialGradient id="SVGID_00000002374645131369804920000017619558516558115719_" cx="-455.8018" cy="793.3603" r="7.5" gradientTransform="matrix(3.7 0.6104 -0.1024 0.6205 1798.6843 -207.0245)" gradientUnits="userSpaceOnUse">
+		<stop  offset="0" style="stop-color:#FFD73B"/>
+		<stop  offset="1" style="stop-color:#EE8400"/>
+	</radialGradient>
+	<path style="fill:url(#SVGID_00000002374645131369804920000017619558516558115719_);" d="M27,8c6-2,6-4.6,9.7-5
+		c4.1,3,1.6,6.7,1.6,9.4C35,14,33,10,27.1,11.4L27,8L27,8z"/>
+	
+		<radialGradient id="SVGID_00000140004667327256443800000010654209664073604234_" cx="26" cy="-81.3337" r="4" gradientTransform="matrix(1 0 0 -0.75 0 -49)" gradientUnits="userSpaceOnUse">
+		<stop  offset="0" style="stop-color:#FFD73B"/>
+		<stop  offset="1" style="stop-color:#EE8400"/>
+	</radialGradient>
+	<path style="fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_00000140004667327256443800000010654209664073604234_);" d="
+		M30,10c0,1.7-1.8,3-4,3s-4-1.3-4-3s1.8-3,4-3S30,8.3,30,10z"/>
+</g>
+</svg>
