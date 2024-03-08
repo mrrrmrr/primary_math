@@ -36,6 +36,12 @@ body {
   z-index: 3;
 }
 
+.bee{
+  position: absolute;
+  z-index: 8;
+  bottom: 40px
+}
+
 
 
 #frog{

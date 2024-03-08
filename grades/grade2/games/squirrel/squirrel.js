@@ -2,6 +2,8 @@ let answer, wrongNum = 0, rightNum = 0;
 
 const frogElement = document.getElementById("frog");
 const rabbitElement = document.getElementById("rabbit");
+const bee1Element = document.getElementById("bee1");
+const bee2Element = document.getElementById("bee2");
 
 
 function setTask(){
@@ -26,20 +28,24 @@ function checkAnswer() {
 }
 
 
-function showAnimation(filename, fps, frameMax, imgElement){
+function showAnimation(filename, fps, frameMax, imgElement, endless=false){
     let n = 1;
     let animation = setInterval(function (){
         if (n > frameMax){
-            imgElement.removeAttribute('src');
-            clearInterval(animation);
-            return;
+            if (!endless){
+               imgElement.removeAttribute('src');
+                clearInterval(animation);
+                return; 
+            }
+            else n = 1;            
         }
         imgElement.setAttribute('src', `${filename}${String(n).padStart(4, '0')}.png`);
         n++;
     }, 1000/fps);
 }
 
-
+showAnimation("images/bee1/bee1", 25, 84, bee1Element, true);
+showAnimation("images/bee2/bee2", 25, 112, bee2Element, true);
 
 setInterval(function (){
     if (!frogElement.getAttribute('src') && getRandomInteger(1, 3) == 1){
