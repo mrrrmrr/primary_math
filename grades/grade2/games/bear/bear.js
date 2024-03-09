@@ -27,7 +27,7 @@ function setTask(){
 
 function showCompliment(){
     element = document.createElement('img');
-    element.setAttribute('src', "images/awesome.gif");
+    element.setAttribute('src', `images/awesome.gif?${Date.now()}`);
     element.className = "x-center compliment";
     document.body.append(element);
 
