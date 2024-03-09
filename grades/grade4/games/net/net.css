@@ -1,0 +1,105 @@
+body{
+  background-image: url("images/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.user{
+  position: absolute;
+  width: 70px;
+  height: 100px;
+
+  background-image: url("images/man.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+#net{
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+}
+
+.edge {
+  position: absolute;
+  z-index: -3;
+
+  height: 50px;
+
+  transform-origin: left center;
+
+  .line{
+    position: absolute;
+    z-index: -5;
+    left: 0;
+    top: 24px;
+
+    height: 2px;
+    width:  100%;
+
+    background-color: white;
+  }
+}
+
+.file{
+  position: absolute;
+  z-index: 5;
+  top: 0;
+
+  height: 50px;
+
+  animation: sending linear;
+
+  transform-origin: center center;
+}
+
+@keyframes sending {
+  0% {
+    left: 0;
+  }
+  100%{
+    left: 95%;
+  }
+
+  
+}
+
+#task {
+  position: fixed;
+  top: 27%;
+  z-index: 100;
+  
+  min-width: 300px;
+
+  font-size: 50px;
+  color: #ffffff;;
+
+  div{
+    display: inline-flex;
+  }
+
+  input {
+    width: 150px;
+    font-size: 50px;
+
+    background-color: #c4bcc5;
+    border-color: #272525;;
+  }
+}
+
+button {
+  position: fixed;
+  top: 40%;
+
+  z-index: 100;
+
+  width: 400px;
+
+  background-color: #b1b1b1;
+  color: #272525;
+  font-size: 30px;
+}

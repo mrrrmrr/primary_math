@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Сеть</title>
+    <link rel="stylesheet" href="../../../../common/common.css">
+    <link href="net.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <script>
+      const rules = `
+      В городе Карыманск прокладывают сеть связи. Каждого нового пользователя интересует площадь покрытия на некотором участке, он находит ответ, но в непонятных единицах измерения. Если он правильно понимает площадь, без проблем все настраивает и присоединяется к сети. Если при подключении указывает неправильные данные(потому что неправильно перевел площадь), в сети происходит сбой, и она теряет одного пользователя.
+      Помогите новому пользователю присоединиться. Для этого введите нужное число в поле и нажмите "проверить".`;  
+    </script>
+
+
+    <div class="x-center" id="task">
+        <div id="var0">  </div>
+        <div id="measure0">   </div>
+        <div> = </div>
+        <div id="var1"> </div>
+        <div id="measure1"> </div>
+    </div>
+    <button class="x-center" onclick="checkAnswer()"> проверить </button>
+
+    <div id="net"></div>
+    
+    <script src="../../../../common/common.js"></script>
+    <script src="net.js"></script>
+  </body>
+
+</html>
