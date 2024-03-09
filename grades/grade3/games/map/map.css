@@ -1,5 +1,4 @@
 body{
-  min-width: 1000px;
   background-color: #85ff6e;
 }
 
@@ -16,8 +15,8 @@ body{
   top: 0;
   left: 0;
 
-  width: 100%;
-  height: 65%;
+  width: 1370px;
+  height: 420px;
 
   background-image: url("images/road.png");
   background-repeat: no-repeat;
@@ -26,6 +25,7 @@ body{
 
   .house {
     position: fixed;
+    z-index: 1;
     left: 549px;
     top: 497px;
   }
@@ -36,6 +36,16 @@ body{
     left: 100%;
     top: 100%;
   }
+}
+
+.car {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 100%;
 }
 
 #panel{

@@ -52,7 +52,7 @@ function setTask(){
 function addHouseCursor() {
     houseNum = getRandomInteger(1, 16);
     mapElement.style.cursor = `none`;
-    houseCursorElement.setAttribute('src', `images/house${houseNum}.png`);
+    houseCursorElement.setAttribute('src', `images/houses/house${houseNum}.png`);
 }
 
 function removeHouseCursor() {
@@ -61,6 +61,26 @@ function removeHouseCursor() {
     houseCursorElement.style.top = "100%";
     houseCursorElement.style.left = "100%";
     mapElement.style.cursor = "auto";
+}
+
+function showCar(type, colorNumber, fps){
+    const frameMax = 50;
+
+    let imgElement = document.createElement('img');
+    imgElement.className = 'car';
+    mapElement.prepend(imgElement);
+
+    let filename = `images/cars/car${type}${colorNumber}/car${type}${colorNumber}`
+    let n = 1;
+    let animation = setInterval(function (){
+        if (n > frameMax){
+            imgElement.remove();
+            clearInterval(animation);
+            return;           
+        }
+        imgElement.setAttribute('src', `${filename}${String(n).padStart(4, '0')}.svg`);
+        n++;
+    }, 1000/fps);
 }
 
 
@@ -79,7 +99,7 @@ for (let btn of document.getElementsByClassName('btn')){
 mapElement.onclick = function () {
     if (houseNum) {
         let houseElem = document.createElement('img')
-        houseElem.setAttribute('src', `images/house${houseNum}.png`);
+        houseElem.setAttribute('src', `images/houses/house${houseNum}.png`);
         houseElem.className = 'house';
         houseElem.style.top = `${event.pageY}px`;
         houseElem.style.left = `${event.pageX}px`;
@@ -96,3 +116,9 @@ document.body.onmousemove = function () {
         houseCursorElement.style.top = `${event.clientY}px`;
     }
 }
+
+setInterval(function () {
+    if (!getRandomInteger(0, 2)) {
+        showCar(getRandomInteger(1, 2), getRandomInteger(1, 4), 25);
+    }
+}, 3000);
