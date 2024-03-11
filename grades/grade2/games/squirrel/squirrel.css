@@ -7,39 +7,49 @@ body {
   z-index: -10;
   top: 0;
   left: 0;
-  height: 680px;
-  width: 1370px;
+
+  min-height: 680px;
+  min-width: 1370px;
+  height: 100%;
+  width: 100%;
+
   padding: 0;
-  background-image: url("images/bg.png");
+  background-image: url("images/bg1.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: bottom;
 }
 
 #bush{
-  position: fixed;
+  position: absolute;
     z-index: 20; 
   left: 0;
-    bottom: -10px;
-  width: 400px; 
+    bottom: 0;
+  width: calc(40000%/1370); 
 }
 
 #grass{
-  position: fixed;
+  position: absolute;
   z-index: 5;
-  top: 0;
-  left: 0;
+  bottom: 5.5%;
+  left: -0.2%;
   width: 100%;
 }
 
 #rabbit{
+  position: absolute;
   z-index: 3;
+
+  width: 100%;
+
 }
 
 .bee{
   position: absolute;
   z-index: 8;
-  bottom: 40px
+  bottom: 5%;
+
+  width: 100%;
 }
 
 
@@ -47,6 +57,8 @@ body {
 #frog{
   position: absolute;
   z-index: 10;
+
+  width: 100%;
 }
 
 #task {
@@ -108,11 +120,11 @@ body {
 
 
 #squirrel{
-  height: 350px;
-  position: fixed;
+  position: absolute;
   z-index: 10;
   left: 45%;
-  bottom: -2%;
+  bottom: 0;
+  height: 50%;
 }
 
 
